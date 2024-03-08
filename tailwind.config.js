@@ -19,9 +19,6 @@ module.exports = {
         'navy-blue':'#2E1A6E',
         'dark-blue':'#1D0A5B'
       },
-      fontFamily:{
-        'logo':'Russo One',
-      },
     },
   },
   plugins: [],

@@ -1,9 +1,37 @@
-import Image from "next/image";
+import Image from "next/image"
+import "../public/hp.png"
+import {Squada_One} from "next/font/google"
+import Link from "next/link"
+import "../public/rarrow.png"
+
+const squada = Squada_One({ subsets: ["latin"],weight: '400',});
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      
+    <main className="flex min-h-screen flex-col items-center justify-between">
+      <div className="flex flex-row justify-between bg-greenish w-screen">
+        <div className="flex-1 flex flex-col justify-center items-center flex-wrap bg-greenish">
+          <div className={squada.className}>
+            <p className="text-8xl p-8 text-center text-[#336678]">Invest in your knowledge</p>
+          </div>
+          <div className="grid grid-flow-col grid-cols-2 gap-8">
+            <p className="text-2xl text-navy-blue font-semibold">Learn concepts.</p>
+            <p className="text-2xl text-dark-blue font-semibold">Test yourself.</p>
+          </div>
+          <p className="text-2xl text-dark-blue font-extrabold pt-4">Get rewards!</p>
+          <div className="flex flex-row justify-between gap-4 bg-dark-blue m-4 p-2 rounded-sm">
+            <Link href="/login" className="text-xl text-light-green font-semibold">Get started</Link>
+            <Link href="/login"><Image src="/rarrow.png" width="25" height="10"></Image></Link>
+          </div>
+        </div>
+        {/* <div className=""><Image src="/hp.png" width="450" height="50"></Image></div> */}
+        <div className="relative">
+            <div className="w-full h-full">
+              <Image src="/hp.png" width={450} height={50}/>
+            </div>
+          <div className="absolute inset-0 bg-gradient-to-r from-greenish via-transparent to-transparent" />
+        </div>
+      </div>
     </main>
   );
 }
