@@ -8,7 +8,7 @@ const russo = Russo_One({ subsets: ["latin"],weight: '400',});
 const Navbar = () => {
   return (
     <>
-    <div className="flex justify-between w-screen h-16 bg-gradient-to-r from-light-green to-greenish">
+    <div className="flex justify-between w-auto h-16 bg-gradient-to-r from-light-green to-greenish">
         <Image src="/logo.png" width="250" height="50" className="p-2 pl-4"/>
         <div className="flex items-center p-4 pr-8 gap-4">
             <Link href="/" className={russo.className}><p className="text-darkish-green no-underline hover:underline">Home</p></Link>

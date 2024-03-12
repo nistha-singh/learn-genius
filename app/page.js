@@ -1,15 +1,23 @@
+"use client"
 import Image from "next/image"
 import "../public/hp.png"
 import {Squada_One} from "next/font/google"
 import Link from "next/link"
 import "../public/rarrow.png"
+import Carousel from "@/components/carousel"
+import Card from "@/components/card"
+import Scheduled from "@/components/schedulecard"
+import Live from "@/components/livequiz"
+import ScheduledQuiz from "@/components/scheduledquiz"
+import Founders from "@/components/Founders"
 
 const squada = Squada_One({ subsets: ["latin"],weight: '400',});
 
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
-      <div className="flex flex-row justify-between bg-greenish w-screen">
+    <main className="flex min-h-screen flex-col items-center justify-start">
+      <div className="flex flex-row justify-between max-w-full bg-greenish">
         <div className="flex-1 flex flex-col justify-center items-center flex-wrap bg-greenish">
           <div className={squada.className}>
             <p className="text-8xl p-8 text-center text-[#336678]">Invest in your knowledge</p>
@@ -19,12 +27,11 @@ export default function Home() {
             <p className="text-2xl text-dark-blue font-semibold">Test yourself.</p>
           </div>
           <p className="text-2xl text-dark-blue font-extrabold pt-4">Get rewards!</p>
-          <div className="flex flex-row justify-between gap-4 bg-dark-blue m-4 p-2 rounded-sm">
+          <div className="flex flex-row justify-between gap-4 bg-dark-blue m-8 p-2 rounded-sm">
             <Link href="/login" className="text-xl text-light-green font-semibold">Get started</Link>
             <Link href="/login"><Image src="/rarrow.png" width="25" height="10"></Image></Link>
           </div>
         </div>
-        {/* <div className=""><Image src="/hp.png" width="450" height="50"></Image></div> */}
         <div className="relative">
             <div className="w-full h-full">
               <Image src="/hp.png" width={450} height={50}/>
@@ -32,6 +39,15 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-greenish via-transparent to-transparent" />
         </div>
       </div>
+      <Live></Live>
+      <div className="flex justify-center w-full items-center bg-gradient-to-br from-greenish  via-darkish-green to-greenish  p-2 text-white text-5xl">
+        <p className={squada.className}>200000+ participants</p>
+      </div>
+      <ScheduledQuiz></ScheduledQuiz>
+      <div className="flex justify-center w-full items-center bg-gradient-to-br from-greenish via-darkish-green to-greenish p-2 text-white text-5xl">
+        <p className={squada.className}>INR 100000+ prizes</p>
+      </div>
+      <Founders></Founders>
     </main>
   );
 }
