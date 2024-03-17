@@ -47,7 +47,7 @@ const ScheduledQuiz = () => {
         Scheduled quizzes!!!
         </p></div>
         {/* <Carousel items={yourCardsArray} className="border-red-600"></Carousel> */}
-        <div className="grid grid-flow-col grid-cols-4 justify-between gap-16 justify-items-center m-4 p-4">
+        <div className="grow grid grid-cols-1 sm:grid-cols-4 p-8 justify-between gap-16">
         {cardData.map((cardData, index) => (
           <Scheduled key={index} {...cardData}/>
         ))}

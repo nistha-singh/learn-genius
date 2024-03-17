@@ -48,29 +48,16 @@ const founders = [
     },
   ];
 
-  const chunkedFounders = founders.reduce((acc, curr, index) => {
-    const chunkIndex = Math.floor(index / 3);
-    if (!acc[chunkIndex]) {
-      acc[chunkIndex] = [];
-    }
-    acc[chunkIndex].push(curr);
-    return acc;
-  }, []);
-
 const Founders = () => {
   return (
     <div className='bg-light-green min-w-full min-h-fit p-4'>
         <div className={squada.className}>
-            <span className="text-6xl text-left text-[#336678]">From our <p className='text-dark-blue inline-block'>Founders</p></span>
+            <span className="text-6xl text-left text-[#336678] ml-4">From our <p className='text-dark-blue inline-block'>Founders</p></span>
         </div>
-        <div className='grid grid-flow-col grid-cols-3 justify-between gap-16 justify-items-center m-4 p-4'>
-          {chunkedFounders.map((chunk, index) => (
-          <div key={index} className='flex justify-center'>
-            {chunk.map((cardData, idx) => (
-              <FounderCards key={idx} {...cardData} />
+        <div className='grow grid grid-cols-1 sm:grid-cols-3   p-8 justify-between gap-16'>
+            {founders.map((cardData, idx) => (
+              <FounderCards key={idx} {...cardData}/>
             ))}
-          </div>
-          ))}
         </div>
     </div>
   )

@@ -42,9 +42,9 @@ const Live = () => {
         <div className={squada.className}>
         <p className="text-3xl text-dark-blue font-extrabold pt-4">
         Join live quizzes!!!
-        </p></div>
-        {/* <Carousel items={yourCardsArray} className="border-red-600"></Carousel> */}
-        <div className="grid grid-flow-col grid-cols-4 justify-between gap-16 justify-items-center m-4 p-4">
+        </p>
+        </div>
+        <div className="grow grid grid-cols-1 sm:grid-cols-4 p-8 justify-between gap-16">
         {cardData.map((cardData, index) => (
           <Card key={index} {...cardData}/>
         ))}
