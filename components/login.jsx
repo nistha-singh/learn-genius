@@ -44,8 +44,8 @@ const Login = () => {
             {/* image side  */}
             <div className="grow flex flex-col justify-center items-center bg-[url('/bg.png')] bg-cover bg-no-repeat h-1/2 sm:min-h-full w-full sm:w-1/3">
                <p className='text-4xl font-semibold text-white'>New here?</p>
-               <p className='w-3/4 text-center text-white'>Sign up and discover great oppurtunities!</p>
-               <button className='m-6 py-2 px-12 bg-white rounded-xl text-sm font-semibold border'>Sign Up</button>
+               <p className='w-3/4 text-center text-white pt-2'>Sign up and discover great oppurtunities!</p>
+               <Link href='/signup'><button className='m-6 py-2 px-12 bg-white rounded-xl text-sm font-semibold border'>Sign Up</button></Link>
             </div>
         </div>      
     </main>

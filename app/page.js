@@ -22,9 +22,9 @@ export default function Home() {
           <div className={squada.className}>
             <p className="text-5xl sm:text-8xl p-8 text-center text-[#336678]">Invest in your knowledge</p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-8">
-            <p className="text-2xl text-navy-blue font-semibold">Learn concepts.</p>
-            <p className="text-2xl text-dark-blue font-semibold">Test yourself.</p>
+          <div className="grid grid-cols-1 justify-center items-center sm:grid-cols-2 sm:gap-8">
+            <p className="text-2xl text-navy-blue font-semibold text-center">Learn concepts.</p>
+            <p className="text-2xl text-dark-blue font-semibold text-center">Test yourself.</p>
           </div>
           <p className="text-2xl text-dark-blue font-extrabold pt-4 text-center">Get rewards!</p>
           <div className="flex flex-row justify-between items-center gap-4 bg-dark-blue m-8 p-2 rounded-sm">
