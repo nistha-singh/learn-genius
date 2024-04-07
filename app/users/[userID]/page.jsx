@@ -5,6 +5,7 @@ import "@/public/pp.png"
 import {Squada_One} from "next/font/google"
 import {Bebas_Neue} from "next/font/google"
 import "@/public/bbg.png"
+import {Trophy} from "@heroicons/react"
 
 const squada = Squada_One({ subsets: ["latin"],weight: '400',});
 const bebas = Bebas_Neue({ subsets: ["latin"],weight: '400',});
@@ -23,7 +24,13 @@ const Users = ({params}) => {
             <p className='mt-2'>Rank: <span className='font-semibold'>2569</span></p>
           </div>
         </div>
-        <Link href='/' className='flex justify-center items-center m-4'><button className='bg-[#FCFBF4] py-2 px-8 border-2 border-[#ebfceb] rounded-lg hover:shadow-lg font-semibold text-gray-700'>Edit your profile</button></Link>
+        <Link href='/' className='flex justify-center items-center m-2'><button className='bg-cream py-2 px-8 border-2 border-[#ebfceb] rounded-lg hover:shadow-lg font-semibold text-gray-700'>Edit your profile</button></Link>
+        <p className='m-4 text-pretty'>Aspiring Machine learning engineer| Web developer| UI/UX Designer| Competitive Programmer</p>
+        <hr className='mx-4'></hr>
+        <div>
+          <p className='m-4 font-bold text-lg'>Quiz Stats</p>
+          <Trophy/>
+        </div>
       </div>
       {/* right side */}
       <div className='my-4 mr-4 bg-white w-3/4 h-full'>

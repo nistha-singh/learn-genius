@@ -17,7 +17,8 @@ module.exports = {
         'greenish':'#ADDBD0',
         'darkish-green':'#4C8092',
         'navy-blue':'#2E1A6E',
-        'dark-blue':'#1D0A5B'
+        'dark-blue':'#1D0A5B',
+        'cream':'#FCFBF4',
       },
     },
   },
