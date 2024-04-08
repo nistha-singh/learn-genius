@@ -1,0 +1,14 @@
+{
+  "hosting": {
+    "site": "nextlevel-2552",
+    "public": "out",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "frameworksBackend": {  
+      "region": "us-central1"
+    }
+  }
+}
