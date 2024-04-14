@@ -41,10 +41,10 @@ const Signup = () => {
                         {/* <label for='name'></label>
                         <input type='text' id='name' name='name' className='w-40 sm:w-64 h-10 border border-gray-300 rounded-2xl px-4 mt-4' placeholder='Full name' required/> */}
 
-                        <label for='email'></label>
+                        {/* <label for='email'></label> */}
                         <input type='email' id='username' name='email' value={email} onChange={(e) => setEmail(e.target.value)}  className='w-40 sm:w-64 h-10 border border-gray-300 rounded-2xl px-4 mt-4' placeholder='Email' required/>
 
-                        <label for='password'></label>
+                        {/* <label for='password'></label> */}
                         <input type='password' id='password' name='password' value={password} onChange={(e) => setPassword(e.target.value)} className='w-40 sm:w-64 h-10 border border-gray-300 rounded-2xl px-4 mt-4' placeholder='Password' required></input>
 
                         {/* <label for='confirmpassword'></label>
